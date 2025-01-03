@@ -3,13 +3,10 @@ package main // viewData represents the root model used to dynamically update th
 import (
 	"fmt"
 	"log"
-	"math/rand"
-	"time"
 )
 
 func init() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
-	rand.Seed(time.Now().UTC().UnixNano())
 }
 
 func main() {

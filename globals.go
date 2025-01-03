@@ -12,7 +12,7 @@ type ckey int
 const ctxkey ckey = iota
 
 var (
-	servicePort                    = ":" + os.Getenv("servicePort")
+	servicePort                    = ":9545"
 	logFilePath                    = os.Getenv("logFilePath")
 	templates   *template.Template = template.New("main")
 	companyName string             = "BoltApp"

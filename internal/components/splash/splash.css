@@ -1,0 +1,86 @@
+{{ define "splash.css" }}
+.splash-outer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  animation: scalein 800ms linear;
+}
+.splash-inner {
+  background: #e8ffff;
+  padding: 1em;
+  border-radius: 0.4em;
+  animation: hoverin 2000ms linear infinite;
+}
+
+.splash-main {
+  color: white;
+  padding: 0.7em;
+  border-radius: 0.25em;
+  font-size: 1.6em;
+  width: -webkit-fill-available;
+  text-align: center;
+  background: radial-gradient(circle at 100%, #67b70e6b, #1b8f5f70 50%, #d74d1480 75%, #d7641791 75%);
+  font-weight: 250;
+  cursor: pointer;
+}
+.nav-outer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+} 
+.nav-info {
+  font-size: 1em;
+  background: #79350096;
+  color: seashell;
+  margin: 1em 0.5em 0 0;
+}
+.nav-assets {
+  font-size: 1em;
+  background: #0a6f7169;
+  color: seashell;
+  margin: 1em 0 0 0.5em;
+}
+.moon {
+  height: 8vh;
+  width: 8vh;
+  background: #fff9c9;
+  border-radius: 3em;
+  position: absolute;
+  top: 48vh;
+  left: 48vw;
+  animation: 3500ms linear infinite orbit;
+  /* background: radial-gradient(circle at 100%, #fff5aabd, #fffbc5cc 50%, #fffcd0d6 75%, #fffdc3de 75%); */
+  background: radial-gradient(circle at 100%, #1ca391bd, #e1a9efcc 50%, #fffcd0d6 75%, #fffdc3de 75%);
+  font-size: 1.6em;
+}
+@keyframes orbit {
+  25% {transform: translate(15vw, -13vh) scale(0.8);}
+  50% {transform: scale(0.5); z-index: -1;}
+  74% {z-index: -1;}
+  75% {transform: translate(-15vw, 13vh); z-index: 1;}
+}
+@media screen and (orientation:portrait) {
+  .splash-inner {
+    margin-bottom: 15vh;
+  }
+  .moon {
+    top: calc(48vh - 4.5em);
+  }
+
+}
+
+
+@keyframes scalein {
+  0% {transform: scale(0);}
+  100% {transform: scale(1);}
+}
+@keyframes hoverin {
+  0% {transform: translateY(0em);}
+  50% {transform: translateY(0.5em);}
+  100% {transform: translateY(0em);}
+}
+{{end}}

@@ -1,0 +1,14 @@
+{{ define "splash.tmpl" }}
+<div class="splash-outer" id="splash-outer">
+    <div class="splash-inner" id="splash-inner">
+        <div class="splash-main">ComfortStarr Holdings LLC</div>
+        <div class="nav-outer">
+            <div class="nav-butt nav-info splash-main" id="nav-info" onclick="window.location = window.location.origin + '/cs-info'">Information</div>
+            <div class="nav-butt nav-assets splash-main" id="nav-assets" onclick="window.location = window.location.origin + '/cs-assets'">Assets</div>
+        </div>
+    </div>
+    <div class="moon" id="moon"></div>
+</div>
+<style>{{ template "splash.css" }}</style>
+<script>{{ template "splash.js"}}</script>
+{{end}}

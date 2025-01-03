@@ -1,0 +1,13 @@
+{{ define "spaceBG.css" }}
+.fixed-bg {
+  background-image: url(public/media/hubble.jpg);
+  background-size: contain;
+  background-position: center;
+  background-attachment: initial;
+  height: 120vh;
+  width: 100%;
+  position: fixed;
+  z-index: -10001;
+  bottom: 0;
+}
+{{end}}

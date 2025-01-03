@@ -1,0 +1,25 @@
+{{ define "info.css" }}
+.info-outer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.info-inner {
+  background: #793500;
+  padding: 1em;
+  border-radius: 0.3em;
+  color: white;
+  font-weight: 400;
+  margin: 20vh 20vh;
+}
+.info-inner > p {
+  padding: 0.5em;
+}
+
+@media screen and (orientation:portrait) {
+  .info-inner {
+    margin: 5vh 2em;
+  }
+}
+{{end}}

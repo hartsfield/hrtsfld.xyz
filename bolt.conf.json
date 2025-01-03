@@ -1,0 +1,22 @@
+{
+    "app": {
+        "name": "HRTSFLD",
+        "command": "hrtsfld.xyz",
+        "domain_name": "hrtsfld.xyz",
+        "port": "9545",
+        "tls_enabled": true,
+        "alertsOn": true,
+        "env": {"logFilePath": "./log.txt"},
+        "version": "0.1",
+        "repo": "https://github.com/hartsfield/hrtsfld.xyz"
+    },
+    "gcloud": {
+        "command": "gcloud",
+        "zone": "us-central1-a",
+        "project": "mysterygift",
+        "proxy_home": "/home/john/bp/",
+        "livedir": "/home/john/live/",
+        "user": "john",
+        "instance": "main"
+    }
+}

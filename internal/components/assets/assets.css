@@ -1,0 +1,102 @@
+{{ define "assets.css" }}
+.asset-description {
+  font-size: 0.8em;
+}
+.asset-cat-val {
+  display: flex;
+}
+.assets {
+    background-color: #c9c9c96b;
+    border-radius: 0.4em;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5em;
+    width: fit-content;
+}
+.asset-header {
+  font-weight: 400;
+  margin-bottom: 0.2em;
+}
+.asset-category > ul {
+  list-style-type: none;
+}
+.assets-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.asset-img-outer {
+  /* height: 5em; */
+}
+.asset-img {
+  background-image: url(public/media/pr.png);
+  background-size: cover;
+  border-radius: 0.3em;
+  height: 0;
+  width: 100%;
+  padding-top: 53.64%; 
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+.indigo-img {
+  background-image: url(public/media/ic.png);
+}
+.mg-img {
+  background-image: url(public/media/mg.png);
+
+}
+.bolt-img {
+  background-image: url(public/media/bolt.png);
+}
+.asset {
+  background-color: white;
+  border-radius: 0.4em;
+  padding: 0.5em;
+  margin: 0.5em;
+  max-width: 15vw;
+  display: flex;
+  flex-direction: column;
+}
+.asset > div {
+  margin-bottom: 1.0em;
+}
+.asset-name {
+  font-weight: 300;
+  text-align: center;
+  background: #ffcd00;
+  padding: 0.1em 0 0.2em;
+  /* margin-bottom: 1em; */
+}
+.asset-category {
+  font-size: 0.8em;
+  margin-right: 0.5em;
+}
+.asset-value {
+  font-size: 0.8em;
+  margin-left: 0.5em;
+}
+@media screen and (orientation:portrait) {
+  .assets-outer {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .assets {
+    margin-top: 0;
+    margin-bottom: 30vh;
+    /* width: 90vw; */
+    background-color: transparent;
+  }
+  .asset {
+    max-width: unset;
+    margin-bottom: 10vh;
+    /* width: 100%; */
+    margin: 5em 1em;
+  }
+}
+{{end}}

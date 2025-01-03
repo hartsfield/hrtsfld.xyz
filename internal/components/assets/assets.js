@@ -1,0 +1,2 @@
+{{ define "assets.js" }}
+{{end}}

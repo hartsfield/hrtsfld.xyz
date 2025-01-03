@@ -1,0 +1,2 @@
+{{ define "info.js" }}
+{{end}}
